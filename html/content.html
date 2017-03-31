@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/content.css">
+	<link href="../css/default.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<!-- <script src="../js/jquery-1.7.1.min.js" language="javascript" type="text/javascript"></script> -->
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/garden.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+	<title></title>
+
+
+<!-- <script src="../js/tao.js" language="javascript" type="text/javascript"></script> -->
+
+</head>
+<body>
+	<div class="box">
+		<div class="row">
+		  <div class="col-md-6" id="left">
+			<div id="code">
+				/**<br>
+				还记得我们相识的时候吗<br>
+				那是在好久好久的 一个心理素质拓展大赛 的面试的晚上<br>
+					
+				*/<br>
+			</div>
+		  </div>
+
+		  <div class="col-md-6" id="right">
+		  	<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Xrp, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">--- LL</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+  
+		</div>
+	</div>
+
+	
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2015, 10, 29);
+		together.setHours(19);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none");
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+<!-- <div id="bubbles" style="visibility:hidden">
+<img src="1.png">
+<img src="2.png">
+<img src="1.png">
+ -->
+
+</div>
+</body>
+</html>

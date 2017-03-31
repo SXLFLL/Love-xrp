@@ -1,0 +1,25 @@
+body{
+	background-color: #fff;
+	margin: 0 auto;
+	font-family: "楷体";
+	width: 100%;
+	height: 100%;
+}
+
+.box{
+	background-color: #fff;
+}
+
+.box .row{
+	//margin-top: 8%;
+}
+
+.box #left{
+	background-color: #fff;
+
+}
+
+.box #right{
+	background-color: #fff;
+}
+
