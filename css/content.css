@@ -27,7 +27,10 @@ body{
 
 .box #right{
 	//background-color: #fff;
-	margin-top: 40px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 }
 
+b{
+	color: 	#D9B300;
+}

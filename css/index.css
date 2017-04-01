@@ -32,3 +32,8 @@ table{
 	height: 100%;
 	font-family: "楷体";
 }
+
+b{
+	color: #FF5151;
+	font-size: 1.2em;
+}
