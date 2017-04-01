@@ -1,5 +1,5 @@
 $(document).ready(function(e) {
-	time=setInterval("$.change()",5000);
+	time=setInterval("$.change()",3000);
 
 	t=1;
 	$("#t-"+t).fadeIn();
